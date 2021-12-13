@@ -11,12 +11,13 @@ function IndexPage() {
         <nav>
           <ul>
             <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/about">What's On</a></li>
+            <li><a href="/about">Space Hire</a></li>
+            <li><a href="/about">Blog</a></li>
+            <li><a href="/about">Volunteer</a></li>
+            <li><a href="/about">Donate</a></li>
+            <li><a href="/about">Subscribe</a></li>
+            <li><a href="/about">Contact & FAQs</a></li>
           </ul>
         </nav>
       </header>
@@ -95,6 +96,10 @@ function IndexPage() {
           <h2>Special Events</h2>
         </section>
       </main>
+      <footer>
+        <p>107 Redfern Street, Redfern</p>
+        <p>3A Joynton Avenue, Green Square</p>
+      </footer>
     </div>
   )
 }
