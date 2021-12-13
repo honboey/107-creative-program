@@ -10,7 +10,7 @@ function IndexPage() {
         </svg>
         <nav>
           <ul>
-            <li><a href="/about">About</a></li>
+            <li><a href="/about" className="font-bold text-xl bg-cyan-200">About</a></li>
             <li><a href="/about">What's On</a></li>
             <li><a href="/about">Space Hire</a></li>
             <li><a href="/about">Blog</a></li>
@@ -22,6 +22,7 @@ function IndexPage() {
         </nav>
       </header>
       <main>
+        <h1>107 Creative Program, 2022</h1>
         <StaticImage src="../images/creative-program.svg" alt="Creative Program 2022 logo" />
         <p>Perrovid itatendis intis et estis con res sam, vellacia venimin ihiciis sitios magnateni berum, comnias dolut incium et omnis unt quid miniantota doluptate re verum quiatestor rat aliatur? In nis ene por molores sit venem endion rae niminct emporuptatis untem quuntur?
         </p>
