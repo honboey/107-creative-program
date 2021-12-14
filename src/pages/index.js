@@ -4,13 +4,16 @@ import { StaticImage } from "gatsby-plugin-image"
 function IndexPage() {
   return (
     <div>
-      <header>
-        <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <header className="container flex justify-between items-center bg-red-100 mx-auto">
+        <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3/24">
           <path d="M0 0V104H104V0H0ZM58.1631 92.8969C58.1631 87.8321 59.3277 84.3135 62.4013 84.3135C65.4749 84.3135 66.5949 87.8703 66.5949 92.9287C66.5949 95.372 66.3276 97.4018 65.7167 99.037H59.0604C58.4368 97.4018 58.1631 95.3402 58.1631 92.8969ZM99.0364 99.037H86.672C88.5047 93.0369 91.3301 87.6858 94.1364 83.849V78.2879H76.083V84.8543H85.6665C85.6665 84.8543 81.3711 89.7664 78.8384 99.037H73.4484C73.9384 96.8673 74.193 95.0539 74.193 92.8969C74.193 84.2499 70.2094 77.6007 62.4013 77.6007C54.5932 77.6007 50.6096 84.2817 50.6096 92.9287C50.6096 95.0857 50.8577 96.8673 51.3477 99.037H47.0905V78.2879H40.7842C40.3196 80.4767 37.7869 82.3665 35.0506 82.3665V88.1375H39.4287V99.037H4.96359V4.96299H99.0364V99.037Z" fill="#010101" />
         </svg>
-        <nav>
-          <ul>
-            <li><a href="/about" className="font-bold text-xl bg-cyan-200">About</a></li>
+        <nav className="w-2/24">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <ul className="hidden">
+            <li><a href="/about" className="">About</a></li>
             <li><a href="/about">What's On</a></li>
             <li><a href="/about">Space Hire</a></li>
             <li><a href="/about">Blog</a></li>
