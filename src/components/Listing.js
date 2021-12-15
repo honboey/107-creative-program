@@ -10,7 +10,7 @@ function Listing() {
             <p>Online</p>
             <p>Series of Art Somewhere online over zoom for Saturday morning creative hangouts</p>
             <p><a href="/">Learn more</a></p>
-            <button className="pills-button">Tix</button>
+            <button className="pills-button pills-button--green w-1/2"><p className="mx-auto mb-0">Tix</p></button>
         </li>
     )
 }

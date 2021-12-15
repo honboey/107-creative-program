@@ -19,9 +19,18 @@
 
 @layer components {
     .wrapper {
-        @apply p-4 md:p-8 lg:p-12 max-w-screen-xl mx-auto
+        @apply p-4 md:p-8 lg:p-12 max-w-screen-xl mx-auto;
     }
     .pills-button {
-        @apply inline-flex items-center px-3 py-1.5 border border-transparent text-base md:text-2xl font-bold rounded-full shadow-sm bg-107-copa-green-100 hover:bg-107-copa-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-107-copa-green-100 w-5/24 lg:w-3/24 mx-1 lg:mx-4 mb-3 lg:mb-4 text-center
+        @apply inline-flex items-center px-3 py-1.5 border border-transparent rounded-full shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 text-center;
+    }
+    .pills-button--green {
+        @apply bg-107-copa-green-100 hover:bg-107-copa-green-200 focus:ring-107-copa-green-100;
+    }
+    .pills-button--purple {
+        @apply bg-107-juni-purple-100 hover:bg-107-juni-purple-200 focus:ring-107-juni-purple-100;
+    }
+    .pills-button--red {
+        @apply bg-red-100 hover:bg-red-200 focus:ring-red-100;
     }
 }
