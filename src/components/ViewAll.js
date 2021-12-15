@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { graphql } from 'gatsby';
 import MonthFilterButton from "../components/MonthFilterButton"
 import Listing from "../components/Listing"
 
@@ -33,13 +34,7 @@ function ViewAll() {
                     </div>
                 </div>
             </button>
-            <ul className="wrapper flex flex-wrap justify-between">
                 <Listing />
-                <Listing />
-                <Listing />
-                <Listing />
-                <Listing />
-            </ul>
         </section>
     )
 }
