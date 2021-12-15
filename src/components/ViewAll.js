@@ -45,7 +45,6 @@ function ViewAll() {
   console.log(eventListingArray)
 
   const [open, setOpen] = useState(false)
-
   function toggleOpen() {
     console.log(open)
     setOpen(!open)
