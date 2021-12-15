@@ -18,7 +18,7 @@ function Family() {
                 <div className="wrapper">
                     <h2 className="text-5xl md:text-8xl font-medium pb-4 md:pb-8 lg:pb-12">Family</h2>
                     <div className="flex flex-wrap justify-between -mx-1 lg:-mx-4">
-                        <MonthFilterButton month="Jan" colour="red" />
+                        <MonthFilterButton month="Jan" colour="green" />
                         <MonthFilterButton month="Feb" colour="purple" />
                         <MonthFilterButton month="Mar" colour="purple" />
                         <MonthFilterButton month="Apr" colour="purple" />

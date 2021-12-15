@@ -18,18 +18,18 @@ function FirstNations() {
                 <div className="wrapper">
                     <h2 className="text-5xl md:text-8xl font-medium pb-4 md:pb-8 lg:pb-12">First Nations</h2>
                     <div className="flex flex-wrap justify-between -mx-1 lg:-mx-4">
-                        <MonthFilterButton month="Jan" colour="purple" />
-                        <MonthFilterButton month="Feb" colour="purple" />
-                        <MonthFilterButton month="Mar" colour="purple" />
-                        <MonthFilterButton month="Apr" colour="purple" />
-                        <MonthFilterButton month="May" colour="purple" />
-                        <MonthFilterButton month="Jun" colour="purple" />
-                        <MonthFilterButton month="Jul" colour="purple" />
-                        <MonthFilterButton month="Aug" colour="purple" />
-                        <MonthFilterButton month="Sep" colour="purple" />
-                        <MonthFilterButton month="Oct" colour="purple" />
-                        <MonthFilterButton month="Nov" colour="purple" />
-                        <MonthFilterButton month="Dec" colour="purple" />
+                        <MonthFilterButton month="Jan" colour="green" />
+                        <MonthFilterButton month="Feb" colour="green" />
+                        <MonthFilterButton month="Mar" colour="green" />
+                        <MonthFilterButton month="Apr" colour="green" />
+                        <MonthFilterButton month="May" colour="green" />
+                        <MonthFilterButton month="Jun" colour="green" />
+                        <MonthFilterButton month="Jul" colour="green" />
+                        <MonthFilterButton month="Aug" colour="green" />
+                        <MonthFilterButton month="Sep" colour="green" />
+                        <MonthFilterButton month="Oct" colour="green" />
+                        <MonthFilterButton month="Nov" colour="green" />
+                        <MonthFilterButton month="Dec" colour="green" />
                     </div>
                 </div>
             </button>
