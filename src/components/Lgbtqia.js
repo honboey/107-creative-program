@@ -1,8 +1,45 @@
 import React, { useState } from 'react';
 import MonthFilterButton from "../components/MonthFilterButton"
-import Listing from "../components/Listing"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 function Lgbtqia() {
+    const data = useStaticQuery(
+        graphql`
+        query {
+            allPrismicEventListing (filter: {tags: {eq: "Lgbtqia"}}){
+              nodes {
+                data {
+                  descriptor {
+                    text
+                  }
+                  event_date(formatString: "DD MMMM, YYYY")
+                  event_image {
+                    alt
+                    gatsbyImageData
+                  }
+                  event_title {
+                    text
+                  }
+                  link {
+                    url
+                  }
+                  location {
+                    text
+                  }
+                  ticket_link {
+                    url
+                  }
+                }
+                id
+              }
+            }
+          }
+        `
+    )
+
+    const eventListingArray = data.allPrismicEventListing.nodes
+
     const [open, setOpen] = useState(false)
 
     function toggleOpen() {
@@ -16,7 +53,11 @@ function Lgbtqia() {
                 onClick={toggleOpen}
                 className="bg-107-janz-orange-100 hover:bg-107-janz-orange-200 w-full text-left">
                 <div className="wrapper">
-                    <h2 className="text-5xl md:text-8xl font-medium pb-4 md:pb-8 lg:pb-12">LGBTQIA</h2>
+                    <h2 className="text-5xl md:text-8xl font-medium">LGBTQIA+</h2>
+                </div>
+            </button>
+            <div className="bg-107-janz-orange-100">
+                <div className="wrapper">
                     <div className="flex flex-wrap justify-between -mx-1 lg:-mx-4">
                         <MonthFilterButton month="Jan" colour="green" />
                         <MonthFilterButton month="Feb" colour="green" />
@@ -32,13 +73,23 @@ function Lgbtqia() {
                         <MonthFilterButton month="Dec" colour="green" />
                     </div>
                 </div>
-            </button>
+            </div>
             <ul className="wrapper flex flex-wrap justify-between">
-                <Listing />
-                <Listing />
-                <Listing />
-                <Listing />
-                <Listing />
+                {
+                    eventListingArray.map((e) => {
+                        return (
+                            <li className="w-11/24 lg:w-7/24 mb-8" key={e.id}>
+                                <GatsbyImage image={e.data.event_image.gatsbyImageData} alt={e.data.event_image.alt} className="mb-4" />
+                                <h3>{e.data.event_title.text}</h3>
+                                <time>{e.data.event_date}</time>
+                                <p>{e.data.location.text}</p>
+                                <p>{e.data.descriptor.text}</p>
+                                <p><a href={e.data.link.url}>Learn more</a></p>
+                                <a href={e.data.ticket_link.url}><button className="pills-button pills-button--green w-1/2" aria-label="Buy tickets"><p className="mx-auto mb-0">Tix</p></button></a>
+                            </li>
+                        )
+                    })
+                }
             </ul>
         </section>
     )

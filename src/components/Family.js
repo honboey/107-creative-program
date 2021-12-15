@@ -7,7 +7,7 @@ function Family() {
     const data = useStaticQuery(
         graphql`
         query {
-            allPrismicEventListing {
+            allPrismicEventListing (filter: {tags: {eq: "family"}}){
               nodes {
                 data {
                   descriptor {
