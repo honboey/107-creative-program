@@ -1,62 +1,78 @@
 {
-    "Main" : {
-      "uid" : {
-        "type" : "UID",
-        "config" : {
-          "label" : "Slug",
-          "placeholder" : "e..g out-of-iso"
-        }
-      },
-      "event_title" : {
-        "type" : "StructuredText",
-        "config" : {
-          "single" : "heading3",
-          "label" : "Title"
-        }
-      },
-      "link" : {
-        "type" : "Link",
-        "config" : {
-          "label" : "Link",
-          "placeholder" : "Link to listing e.g https://107.org.au/event/...",
-          "select" : null
-        }
-      },
-      "event_date" : {
-        "type" : "Date",
-        "config" : {
-          "label" : "date"
-        }
-      },
-      "location" : {
-        "type" : "StructuredText",
-        "config" : {
-          "multi" : "paragraph",
-          "label" : "Location",
-          "placeholder" : "e.g online, Performance space etc"
-        }
-      },
-      "event_image" : {
-        "type" : "Image",
-        "config" : {
-          "constraint" : { },
-          "thumbnails" : [ ],
-          "label" : "event image"
-        }
-      },
-      "descriptor" : {
-        "type" : "StructuredText",
-        "config" : {
-          "multi" : "paragraph,strong,em,hyperlink",
-          "label" : "Descriptor"
-        }
-      },
-      "ticket_link" : {
-        "type" : "Link",
-        "config" : {
-          "label" : "Ticket link",
-          "select" : null
-        }
+  "Main": {
+    "event_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading3",
+        "label": "Title",
+        "placeholder": "e.g Out of Iso"
+      }
+    },
+    "link": {
+      "type": "Link",
+      "config": {
+        "label": "Link",
+        "placeholder": "Link to listing e.g https://107.org.au/event/...",
+        "select": null
+      }
+    },
+    "time_and_date": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Time and date",
+        "placeholder": "e.g 6pm, 12 Jan 2022"
+      }
+    },
+    "month": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "label": "month"
+      }
+    },
+    "location": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Location",
+        "placeholder": "e.g online, Performance space etc"
+      }
+    },
+    "event_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "event image"
+      }
+    },
+    "descriptor": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink",
+        "label": "Descriptor"
+      }
+    },
+    "ticket_link": {
+      "type": "Link",
+      "config": {
+        "label": "Ticket link",
+        "select": null
       }
     }
   }
+}

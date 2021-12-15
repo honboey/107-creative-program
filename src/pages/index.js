@@ -53,7 +53,7 @@ function IndexPage() {
         <Youth />
         <SpecialEvents />
       </main>
-      <footer>
+      <footer className="wrapper text-center">
         <p>107 Redfern Street, Redfern</p>
         <p>3A Joynton Avenue, Green Square</p>
       </footer>
