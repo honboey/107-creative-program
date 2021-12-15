@@ -1,29 +1,63 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 function Listing() {
+    const data = useStaticQuery(
+        graphql`
+        query {
+            allPrismicEventListing {
+              nodes {
+                data {
+                  descriptor {
+                    text
+                  }
+                  event_date(formatString: "DD MMMM, YYYY")
+                  event_image {
+                    alt
+                    gatsbyImageData
+                  }
+                  event_title {
+                    text
+                  }
+                  link {
+                    url
+                  }
+                  location {
+                    text
+                  }
+                  ticket_link {
+                    url
+                  }
+                }
+                id
+              }
+            }
+          }
+        `
+    )
+
+    const eventListingArray = data.allPrismicEventListing.nodes
+    console.log(eventListingArray)
+
     return (
         <ul className="wrapper flex flex-wrap justify-between">
-            <li className="w-11/24 lg:w-7/24 mb-8">
-                <StaticImage src="../images/1x1.png" alt="" className="mb-4" />
-                <h3>Art Somewhere Online</h3>
-                <time>2, 9, 23, 30 Oct 2021</time>
-                <p>Online</p>
-                <p>Series of Art Somewhere online over zoom for Saturday morning creative hangouts</p>
-                <p><a href="/">Learn more</a></p>
-                <button className="pills-button pills-button--green w-1/2"><p className="mx-auto mb-0">Tix</p></button>
-            </li>
-            <li className="w-11/24 lg:w-7/24 mb-8">
-                <StaticImage src="../images/1x1.png" alt="" className="mb-4" />
-                <h3>Art Somewhere Online</h3>
-                <time>2, 9, 23, 30 Oct 2021</time>
-                <p>Online</p>
-                <p>Series of Art Somewhere online over zoom for Saturday morning creative hangouts</p>
-                <p><a href="/">Learn more</a></p>
-                <button className="pills-button pills-button--green w-1/2"><p className="mx-auto mb-0">Tix</p></button>
-            </li>
+            {
+                eventListingArray.map((e) => {
+                    return (
+                        <li className="w-11/24 lg:w-7/24 mb-8" key={e.id}>
+                            <GatsbyImage image={e.data.event_image.gatsbyImageData} alt={e.data.event_image.alt} className="mb-4" />
+                            <h3>{e.data.event_title.text}</h3>
+                            <time>{e.data.event_date}</time>
+                            <p>{e.data.location.text}</p>
+                            <p>{e.data.descriptor.text}</p>
+                            <p><a href={e.data.link.url}>Learn more</a></p>
+                            <a href={e.data.ticket_link.url}><button className="pills-button pills-button--green w-1/2" aria-label="Buy tickets"><p className="mx-auto mb-0">Tix</p></button></a>
+                        </li>
+                    )
+                })
+            }            
         </ul>
-
     )
 }
 
