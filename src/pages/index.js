@@ -47,11 +47,7 @@ function IndexPage() {
       </header>
       <main>
         <ViewAll />
-        <Family />
-        <Lgbtqia />
-        <Youth />
-        <FirstNations />
-        <SpecialEvents />        
+        <Family />             
       </main>
       <footer>
         <p>107 Redfern Street, Redfern</p>
