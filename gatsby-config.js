@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -17,5 +21,15 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `107-creative-program`,
+        accessToken: `${process.env.API_KEY}`,
+        schemas: {
+          event_listing: require("./custom_types/event_listing.json"),
+        },
+      }
+    }
   ],
 };
