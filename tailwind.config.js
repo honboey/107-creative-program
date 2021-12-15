@@ -15,7 +15,7 @@ module.exports = {
         "107-copa-green-200": "#8EFC69",
         "107-janz-orange-100": "#FF732D",
         "107-janz-orange-200": "#FF5A07",
-        "107-inqa-turquoise-100": "#FC4E7E9",
+        "107-inqa-turquoise-100": "#C4E7E9",
         "107-inqa-turquoise-200": "#91E5EA",
         "107-tula-pink-100": "#F6ABCC",
         "107-tula-pink-200": "#F681B5",
