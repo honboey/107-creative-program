@@ -51,7 +51,7 @@ function Lgbtqia() {
         <section className={open === false ? "h-12 md:h-24 lg:h-28 overflow-hidden" : null}>
             <button
                 onClick={toggleOpen}
-                className="bg-107-janz-orange-100 hover:bg-107-janz-orange-200 w-full text-left">
+                className="bg-107-janz-orange-100 hover:text-gray-50 w-full text-left">
                 <div className="wrapper">
                     <h2 className="text-5xl md:text-8xl font-medium">LGBTQIA+</h2>
                 </div>
