@@ -30,6 +30,10 @@ module.exports = {
         "7/24": "29.1666666667%",
         "11/24": "45.8333333333%",
         "21/24": "87.5%"
+      },
+      backgroundImage: {
+        "blob-purple": "url('../images/blob-purple.svg')",
+        "blob-green": "url('../images/blob-green.svg')"
       }
     },
   },
