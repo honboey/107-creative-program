@@ -60,23 +60,6 @@ function Lgbtqia() {
         </div>
       </button>
       <div className="bg-107-janz-orange-100">
-        <div className="wrapper">
-          <div className="flex flex-wrap justify-between -mx-1 lg:-mx-4">
-            <MonthFilterButton month="Jan" colour="green" />
-            <MonthFilterButton month="Feb" colour="green" />
-            <MonthFilterButton month="Mar" colour="green" />
-            <MonthFilterButton month="Apr" colour="green" />
-            <MonthFilterButton month="May" colour="green" />
-            <MonthFilterButton month="Jun" colour="green" />
-            <MonthFilterButton month="Jul" colour="green" />
-            <MonthFilterButton month="Aug" colour="green" />
-            <MonthFilterButton month="Sep" colour="green" />
-            <MonthFilterButton month="Oct" colour="green" />
-            <MonthFilterButton month="Nov" colour="green" />
-            <MonthFilterButton month="Dec" colour="green" />
-          </div>
-        </div>
-      </div>
       <ul className="wrapper flex flex-wrap justify-between">
         {
           eventListingArray.map((e) => {
@@ -94,6 +77,7 @@ function Lgbtqia() {
           })
         }
       </ul>
+      </div>
     </section>
   )
 }
