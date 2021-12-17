@@ -25,7 +25,6 @@ function Layout({ children }) {
         `
     )
     const homepageBannerData = data.allPrismicHomepageBanner.nodes[0].data
-    console.log(homepageBannerData)
 
     return (
         <div>

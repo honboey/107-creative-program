@@ -53,12 +53,14 @@ function FirstNations() {
     <section className={open === false ? "h-12 md:h-24 lg:h-28 overflow-hidden" : null}>
       <button
         onClick={toggleOpen}
-        className="bg-107-inqa-turquoise-100 hover:text-gray-50 w-full text-left">
+        className="bg-107-inqa-turquoise-100 hover:text-gray-700 w-full text-left">
         <div className="wrapper">
           <h2 className="text-5xl md:text-8xl font-medium">First Nations</h2>
         </div>
       </button>
-      <Listing ListingsArray={eventListingArray} />
+      <div className="bg-blob-turquoise bg-no-repeat bg-cover">
+        <Listing ListingsArray={eventListingArray} />
+      </div>
     </section>
   )
 }

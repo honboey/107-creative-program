@@ -33,7 +33,11 @@ module.exports = {
       },
       backgroundImage: {
         "blob-purple": "url('../images/blob-purple.svg')",
-        "blob-green": "url('../images/blob-green.svg')"
+        "blob-green": "url('../images/blob-green.svg')",
+        "blob-turquoise": "url('../images/blob-turquoise.svg')",
+        "blob-orange": "url('../images/blob-orange.svg')",
+        "blob-pink": "url('../images/blob-pink.svg')",
+        "blob-dark-green": "url('../images/blob-dark-green.svg')"
       }
     },
   },
