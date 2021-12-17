@@ -9,6 +9,9 @@ function ViewAll() {
       allPrismicEventListing {
         nodes {
           data {
+            cost {
+              text
+            }
             descriptor {
               text
             }
@@ -24,6 +27,9 @@ function ViewAll() {
             }
             location {
               text
+            }
+            location_link {
+              url
             }
             ticket_link {
               url
