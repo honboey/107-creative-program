@@ -2,7 +2,6 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 function Listing(props) {
-    console.log(props.ListingsArray)
     return (
         <ul className="wrapper flex flex-wrap justify-between">
             {

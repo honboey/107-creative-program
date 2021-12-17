@@ -1,9 +1,32 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import {Helmet} from "react-helmet";
+import { GatsbyImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./Nav"
 
 function Layout({ children }) {
+    const data = useStaticQuery(
+        graphql`
+        query {
+            allPrismicHomepageBanner {
+              nodes {
+                data {
+                  banner_image {
+                      alt
+                    gatsbyImageData
+                  }
+                  homepage_introduction {
+                    text
+                  }
+                }
+              }
+            }
+          }
+        `
+    )
+    const homepageBannerData = data.allPrismicHomepageBanner.nodes[0].data
+    console.log(homepageBannerData)
+
     return (
         <div>
             <Helmet>
@@ -26,8 +49,8 @@ function Layout({ children }) {
                 </div>
                 <section className="lg:flex lg:justify-between lg:items-center">
                     <h1 className="sr-only">107 Creative Program, 2022</h1>
-                    <StaticImage src="../images/creative-program.svg" alt="Creative Program 2022 logo" layout="fullWidth" className="lg:w-1/2 mb-4 lg:mb-0" />
-                    <p className="text-lg md:text-3xl lg:w-11/24">Perrovid itatendis intis et estis con res sam, vellacia venimin ihiciis sitios magnateni berum, comnias dolut incium et omnis unt quid miniantota doluptate re verum quiatestor rat aliatur? In nis ene por molores sit venem endion rae niminct emporuptatis untem quuntur?</p>
+                    <GatsbyImage image={homepageBannerData.banner_image.gatsbyImageData} alt={homepageBannerData.banner_image.alt} layout="fullWidth" className="lg:w-1/2 mb-4 lg:mb-0" />
+                    <p className="text-lg md:text-3xl lg:w-11/24">{homepageBannerData.homepage_introduction.text}</p>
                 </section>
             </header>
             <main>

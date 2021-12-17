@@ -28,6 +28,7 @@ module.exports = {
         accessToken: `${process.env.API_KEY}`,
         schemas: {
           event_listing: require("./custom_types/event_listing.json"),
+          homepage_banner: require("./custom_types/homepage_banner.json")
         },
       }
     },

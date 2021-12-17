@@ -1,0 +1,19 @@
+{
+  "Main": {
+    "banner_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Banner image"
+      }
+    },
+    "homepage_introduction": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "label": "Homepage introduction"
+      }
+    }
+  }
+}
