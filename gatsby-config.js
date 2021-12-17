@@ -30,6 +30,12 @@ module.exports = {
           event_listing: require("./custom_types/event_listing.json"),
         },
       }
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: ".src/images/107.svg"
+      }
     }
   ],
 };

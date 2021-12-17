@@ -1,10 +1,18 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import {Helmet} from "react-helmet";
 import Nav from "./Nav"
 
 function Layout({ children }) {
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>107 Projects | Creative Program </title>
+                <meta name="keywords" content="107 Projects, arts, creative program" />
+                <meta name="description" content="107 Projects' creative program for 2022" />
+                <html lang="en" />
+            </Helmet>
             <header className="wrapper">
                 <div className="flex justify-between items-center pb-4 md:pb-8 lg:pb-12">
                     {/* Start 107 logo */}

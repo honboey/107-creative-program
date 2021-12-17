@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import MonthFilterButton from "../components/MonthFilterButton"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
