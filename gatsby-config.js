@@ -31,11 +31,5 @@ module.exports = {
         },
       }
     },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: ".src/images/107.svg"
-      }
-    }
   ],
 };
