@@ -52,6 +52,21 @@
         "placeholder": "e.g online, Performance space etc"
       }
     },
+    "location_link": {
+      "type": "Link",
+      "config": {
+        "label": "Location link",
+        "placeholder": "e.g Link to Google map"
+      }
+    },
+    "cost": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Cost",
+        "placeholder": "e.g Free, $20 etc"
+      }
+    },
     "event_image": {
       "type": "Image",
       "config": {
