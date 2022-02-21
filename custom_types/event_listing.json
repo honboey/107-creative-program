@@ -71,10 +71,18 @@
         "label": "Descriptor"
       }
     },
-    "ticket_link": {
+    "call_to_action_text": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Call to action text",
+        "placeholder": "e.g Tix, Register, Signup"
+      }
+    },
+    "call_to_action_link": {
       "type": "Link",
       "config": {
-        "label": "Ticket link",
+        "label": "Call to action link",
         "select": null
       }
     }

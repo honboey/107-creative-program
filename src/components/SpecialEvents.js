@@ -28,7 +28,10 @@ function SpecialEvents() {
             location {
               text
             }
-            ticket_link {
+            call_to_action_text {
+              text
+            }
+            call_to_action_link {
               url
             }
             time_and_date {

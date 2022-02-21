@@ -31,7 +31,10 @@ function ViewAll() {
             location_link {
               url
             }
-            ticket_link {
+            call_to_action_text {
+              text
+            }
+            call_to_action_link {
               url
             }
             time_and_date {

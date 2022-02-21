@@ -9,7 +9,7 @@ function Listing(props) {
                     return (
                         <li className="w-11/24 lg:w-7/24 mb-8" key={e.id}>
                             <a href={e.data.link.url}>
-                                <GatsbyImage image={e.data.event_image.gatsbyImageData} alt={e.data.event_image.alt} className="mb-4"/>
+                                <GatsbyImage image={e.data.event_image.gatsbyImageData} alt={e.data.event_image.alt} className="mb-4" />
                             </a>
                             <h3>{e.data.event_title === null ? null : (e.data.event_title.text)}</h3>
                             {e.data.time_and_date === undefined ? null : (<time>{e.data.time_and_date.text}</time>)}
@@ -36,7 +36,7 @@ function Listing(props) {
                             {e.data.cost === undefined ? null : (<p>{e.data.cost.text}</p>)}
                             <p>{e.data.descriptor.text}</p>
                             <p><a href={e.data.link.url}>Learn more</a></p>
-                            {e.data.ticket_link === undefined ? null : (<a href={e.data.ticket_link.url}><button className="pills-button pills-button--green w-1/2" aria-label="Buy tickets"><p className="mx-auto mb-0">Tix</p></button></a>)}
+                            {e.data.call_to_action_link === undefined ? null : (<a href={e.data.call_to_action_link.url}><button className="pills-button pills-button--green w-1/2" aria-label="Buy tickets"><p className="mx-auto mb-0">{e.data.call_to_action_text.text}</p></button></a>)}
                         </li >
                     )
                 })
