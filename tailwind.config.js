@@ -32,6 +32,7 @@ module.exports = {
         "21/24": "87.5%"
       },
       backgroundImage: {
+        "blob-multi": "url('../images/blob-bg.jpg')",
         "blob-purple": "url('../images/blob-purple.svg')",
         "blob-green": "url('../images/blob-green.svg')",
         "blob-turquoise": "url('../images/blob-turquoise.svg')",
