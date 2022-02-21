@@ -6,7 +6,10 @@ function SpecialEvents() {
   const data = useStaticQuery(
     graphql`
     query {
-      allPrismicEventListing(filter: {tags: {eq: "special events"}}) {
+      allPrismicEventListing(
+        sort: {fields: data___month_number, order: ASC}
+        filter: {tags: {eq: "special events"}}
+        ) {
         nodes {
           data {
             descriptor {
@@ -28,7 +31,6 @@ function SpecialEvents() {
             ticket_link {
               url
             }
-            month
             time_and_date {
               text
             }

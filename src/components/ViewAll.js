@@ -6,7 +6,7 @@ function ViewAll() {
   const data = useStaticQuery(
     graphql`
     query {
-      allPrismicEventListing {
+      allPrismicEventListing(sort: {fields: data___month_number, order: ASC}) {
         nodes {
           data {
             cost {
@@ -34,7 +34,6 @@ function ViewAll() {
             ticket_link {
               url
             }
-            month
             time_and_date {
               text
             }
@@ -54,6 +53,8 @@ function ViewAll() {
     console.log(open)
     setOpen(!open)
   }
+
+  console.log(eventListingArray)
 
   return (
     <section className={open === false ? "h-12 md:h-24 lg:h-28 overflow-hidden" : null}>

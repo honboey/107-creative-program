@@ -24,24 +24,12 @@
         "placeholder": "e.g 6pm, 12 Jan 2022"
       }
     },
-    "month": {
-      "type": "Select",
+    "month_number": {
+      "type": "Number",
       "config": {
-        "options": [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec"
-        ],
-        "label": "month"
+        "label": "Month number",
+        "min": 0,
+        "max": 12
       }
     },
     "location": {
@@ -56,7 +44,8 @@
       "type": "Link",
       "config": {
         "label": "Location link",
-        "placeholder": "e.g Link to Google map"
+        "placeholder": "e.g Link to Google map",
+        "select": null
       }
     },
     "cost": {

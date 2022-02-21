@@ -11,7 +11,7 @@ function Listing(props) {
                             <a href={e.data.link.url}>
                                 <GatsbyImage image={e.data.event_image.gatsbyImageData} alt={e.data.event_image.alt} className="mb-4"/>
                             </a>
-                            <h3>{e.data.event_title.text}</h3>
+                            <h3>{e.data.event_title === null ? null : (e.data.event_title.text)}</h3>
                             {e.data.time_and_date === undefined ? null : (<time>{e.data.time_and_date.text}</time>)}
                             {e.data.location_link === undefined ?
                                 (<p className="no-underline">

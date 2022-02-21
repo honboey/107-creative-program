@@ -6,7 +6,10 @@ function Family() {
   const data = useStaticQuery(
     graphql`
     query {
-      allPrismicEventListing(filter: {tags: {eq: "family"}}) {
+      allPrismicEventListing(
+        sort: {fields: data___month_number, order: ASC}
+        filter: {tags: {eq: "family"}}
+        ) {
         nodes {
           data {
             descriptor {
@@ -28,7 +31,6 @@ function Family() {
             ticket_link {
               url
             }
-            month
             time_and_date {
               text
             }
