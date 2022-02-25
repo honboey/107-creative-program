@@ -63,7 +63,7 @@ function Lgbtqia() {
           <h2 className="text-5xl md:text-8xl font-medium">LGBTQIA+</h2>
         </div>
       </button>
-      <div className="bg-blob-orange bg-no-repeat bg-cover">
+      <div className="bg-blob03 bg-no-repeat bg-cover">
         <Listing ListingsArray={eventListingArray} />
       </div>
     </section>

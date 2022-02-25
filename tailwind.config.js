@@ -11,15 +11,15 @@ module.exports = {
         "107-neutral": "#DCDCDC",
         "107-juni-purple-100": "#AA73FF",
         "107-juni-purple-200": "#8E45FF",
-        "107-copa-green-100": "#BEFAAA",
+        "107-copa-green-100": "#C7DEAA",
         "107-copa-green-200": "#8EFC69",
-        "107-janz-orange-100": "#FF732D",
+        "107-janz-orange-100": "rgb(228, 122, 68)",
         "107-janz-orange-200": "#FF5A07",
-        "107-inqa-turquoise-100": "#C4E7E9",
+        "107-inqa-turquoise-100": "#93CFDF",
         "107-inqa-turquoise-200": "#91E5EA",
-        "107-tula-pink-100": "#F6ABCC",
+        "107-tula-pink-100": "rgb(247, 179, 209)",
         "107-tula-pink-200": "#F681B5",
-        "107-reva-green-100": "#32A582",
+        "107-reva-green-100": "#30a582",
         "107-reva-green-200": "#00A774",
       },
       spacing: {
@@ -33,12 +33,12 @@ module.exports = {
       },
       backgroundImage: {
         "blob-multi": "url('../images/blob-bg.jpg')",
-        "blob-purple": "url('../images/blob-purple.svg')",
-        "blob-green": "url('../images/blob-green.svg')",
-        "blob-turquoise": "url('../images/blob-turquoise.svg')",
+        "blob01": "url('../images/blob01.gif')",
+        "blob02": "url('../images/blob02.gif')",
+        "blob03": "url('../images/blob03.gif')",
         "blob-orange": "url('../images/blob-orange.svg')",
-        "blob-pink": "url('../images/blob-pink.svg')",
-        "blob-dark-green": "url('../images/blob-dark-green.svg')"
+        "blob04": "url('../images/blob04.gif')",
+        "blob05": "url('../images/blob05.gif')"
       }
     },
   },

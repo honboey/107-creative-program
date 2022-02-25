@@ -63,7 +63,7 @@ function Family() {
           <h2 className="text-5xl md:text-8xl font-medium">Family</h2>
         </div>
       </button>
-      <div className="bg-blob-green bg-no-repeat bg-cover">
+      <div className="bg-blob02 bg-no-repeat bg-cover">
         <Listing ListingsArray={eventListingArray} />
       </div>
     </section>

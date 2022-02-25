@@ -63,7 +63,7 @@ function FirstNations() {
           <h2 className="text-5xl md:text-8xl font-medium">First Nations</h2>
         </div>
       </button>
-      <div className="bg-blob-turquoise bg-no-repeat bg-cover">
+      <div className="bg-blob01 bg-no-repeat bg-cover">
         <Listing ListingsArray={eventListingArray} />
       </div>
     </section>

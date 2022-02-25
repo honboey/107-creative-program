@@ -63,7 +63,7 @@ function Youth() {
           <h2 className="text-5xl md:text-8xl font-medium">Youth</h2>
         </div>
       </button>
-      <div className="bg-blob-pink bg-no-repeat bg-cover">
+      <div className="bg-blob04 bg-no-repeat bg-cover">
         <Listing ListingsArray={eventListingArray}/>
       </div>
     </section>

@@ -63,7 +63,7 @@ function SpecialEvents() {
           <h2 className="text-5xl md:text-8xl font-medium">Special Events</h2>
         </div>
       </button>
-      <div className="bg-blob-dark-green bg-no-repeat bg-cover">
+      <div className="bg-blob05 bg-no-repeat bg-cover">
         <Listing ListingsArray={eventListingArray} />
       </div>
     </section>
