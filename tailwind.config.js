@@ -5,22 +5,23 @@ module.exports = {
   theme: {
     fontFamily: {
       "sans": ["Helvetica Neue", "ui-sans-serif", "system-ui"]
-    },    
+    },
     extend: {
       colors: {
         "107-neutral": "#DCDCDC",
         "107-juni-purple-100": "#AA73FF",
         "107-juni-purple-200": "#8E45FF",
-        "107-copa-green-100": "#C7DEAA",
+        "107-copa-green-100": "#C2DFA4",
         "107-copa-green-200": "#8EFC69",
-        "107-janz-orange-100": "rgb(228, 122, 68)",
+        "107-janz-orange-100": "#F37232",
         "107-janz-orange-200": "#FF5A07",
-        "107-inqa-turquoise-100": "#93CFDF",
+        "107-inqa-turquoise-100": "#7FD1E1",
         "107-inqa-turquoise-200": "#91E5EA",
         "107-tula-pink-100": "rgb(247, 179, 209)",
         "107-tula-pink-200": "#F681B5",
         "107-reva-green-100": "#30a582",
         "107-reva-green-200": "#00A774",
+        "107-yellow-100": "#F9EE47",
       },
       spacing: {
         "1/24": "4.1666666667%",
@@ -38,7 +39,8 @@ module.exports = {
         "blob03": "url('../images/blob03.gif')",
         "blob-orange": "url('../images/blob-orange.svg')",
         "blob04": "url('../images/blob04.gif')",
-        "blob05": "url('../images/blob05.gif')"
+        "blob05": "url('../images/blob05.gif')",
+        "blob06": "url('../images/blob06.gif')"
       }
     },
   },

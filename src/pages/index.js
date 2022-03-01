@@ -6,6 +6,8 @@ import Lgbtqia from "../components/Lgbtqia"
 import Youth from "../components/Youth"
 import FirstNations from "../components/FirstNations"
 import SpecialEvents from "../components/SpecialEvents"
+import Humans from "../components/Humans"
+import Community from "../components/Community"
 
 function IndexPage() {
   return (
@@ -16,6 +18,8 @@ function IndexPage() {
       <FirstNations />
       <Youth />
       <SpecialEvents />
+      <Humans />
+      <Community />
     </Layout>
   )
 }

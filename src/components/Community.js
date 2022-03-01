@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import Listing from './Listing';
 
-function FirstNations() {
+function SpecialEvents() {
   const data = useStaticQuery(
     graphql`
     query {
       allPrismicEventListing(
         sort: {fields: data___month_number, order: ASC}
-        filter: {tags: {eq: "first nations"}}
+        filter: {tags: {eq: "special events"}}
         ) {
         nodes {
           data {
@@ -60,7 +60,7 @@ function FirstNations() {
         onClick={toggleOpen}
         className="bg-107-yellow-100 hover:text-gray-700 w-full text-left">
         <div className="wrapper">
-          <h2 className="text-5xl md:text-8xl font-medium">First Nations</h2>
+          <h2 className="text-5xl md:text-8xl font-medium">Community</h2>
         </div>
       </button>
       <div className="bg-blob06 bg-no-repeat bg-cover">
@@ -70,4 +70,4 @@ function FirstNations() {
   )
 }
 
-export default FirstNations
+export default SpecialEvents
