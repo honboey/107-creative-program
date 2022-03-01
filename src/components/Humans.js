@@ -8,7 +8,7 @@ function SpecialEvents() {
     query {
       allPrismicEventListing(
         sort: {fields: data___month_number, order: ASC}
-        filter: {tags: {eq: "special events"}}
+        filter: {tags: {eq: "humans"}}
         ) {
         nodes {
           data {
